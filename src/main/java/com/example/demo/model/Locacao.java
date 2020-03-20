@@ -1,25 +1,16 @@
 package com.example.demo.model;
 
 import java.util.Date;
+import java.util.List;
 
 public class Locacao {
 	
 	private Usuario usuario;
-	private Filme filme;
+	private List<Filme> filme;
 	private Date dataLocacao;
 	private Date dataRetorno;
 	private Double valor;
 	
-	public Locacao() {}
-	
-	public Locacao(Usuario usuario, Filme filme, Date dataLocacao, Date dataRetorno, Double valor) {
-		
-		this.usuario = usuario;
-		this.filme = filme;
-		this.dataLocacao = dataLocacao;
-		this.dataRetorno = dataRetorno;
-		this.valor = valor;
-	}
 
 	public Usuario getUsuario() {
 		return usuario;
@@ -29,11 +20,11 @@ public class Locacao {
 		this.usuario = usuario;
 	}
 
-	public Filme getFilme() {
+	public List<Filme> getFilme() {
 		return filme;
 	}
 
-	public void setFilme(Filme filme) {
+	public void setFilme(List<Filme> filme) {
 		this.filme = filme;
 	}
 
